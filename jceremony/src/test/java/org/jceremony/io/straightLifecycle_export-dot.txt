@@ -1,0 +1,15 @@
+strict digraph G {
+  init;
+  destroyed;
+  stopped;
+  stopping;
+  started;
+  starting;
+  destroying;
+  stopping -> stopped;
+  destroying -> destroyed;
+  started -> stopping;
+  starting -> started;
+  init -> starting;
+  stopped -> destroying;
+}

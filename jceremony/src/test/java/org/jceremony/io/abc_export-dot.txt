@@ -1,0 +1,12 @@
+strict digraph G {
+  a [ label="{{checkArrivalA1|performAfterArrivalA1\nperformAfterArrivalA2}|a|{checkCanDepartureA|performAfterDepartureA}}" shape="record" style="filled" ];
+  b [ label="{{checkCanArrivalB1|performAfterArrivalB1\nperformAfterArrivalB2\nperformAfterArrivalB3}|b|{|}}" shape="record" style="filled" ];
+  c [ label="{{|performAfterArrivalC1\nperformAfterArrivalC2}|c|{checkCanDepartureC|}}" shape="record" style="filled" ];
+  d [ label="{{|}|d|{|}}" shape="record" style="filled" ];
+  z [ label="{{|}|z|{|}}" shape="record" style="filled" ];
+  a -> b;
+  b -> c;
+  c -> d;
+  d -> z;
+  a -> z;
+}
